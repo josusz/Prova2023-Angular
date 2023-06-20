@@ -20,20 +20,6 @@
       "active": "true",
       "category": "International",
       "contact": "comercial@stuartcompany.com"
-    },
-    {
-      "id": 4,
-      "name": "Laravel Company",
-      "active": "true",
-      "category": "International",
-      "contact": "comercial@laravelcompany.com"
-    },
-    {
-      "id": 5,
-      "name": "PG Company",
-      "active": "true",
-      "category": "Regional",
-      "contact": "comercial@pgcompany.com"
     }
   ]
 }

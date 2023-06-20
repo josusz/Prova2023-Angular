@@ -43,4 +43,10 @@ export class EmpresasComponent {
         this.formGroupCompany.reset();
       }});
     }
+
+    remove(comapny: Company): void{
+      this.CompanyService.remove(comapny).subscribe({
+        next: () => this.loadCompanies()
+      });
+    }
   }

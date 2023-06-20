@@ -18,4 +18,8 @@ export class CompanyService {
     save(company: Company): Observable<Company>{
         return this.http.post<Company>(this.url, company);
     }
+
+    remove(company: Company): Observable<void>{
+      return this.http.delete<void>(`${this.url}/${company.id}`);
+  }
 }
