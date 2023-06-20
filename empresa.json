@@ -27,6 +27,13 @@
       "active": "true",
       "category": "International",
       "contact": "comercial@laravelcompany.com"
+    },
+    {
+      "id": 5,
+      "name": "PG Company",
+      "active": "true",
+      "category": "Regional",
+      "contact": "comercial@pgcompany.com"
     }
   ]
 }

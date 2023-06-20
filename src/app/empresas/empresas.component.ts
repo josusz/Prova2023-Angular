@@ -25,6 +25,17 @@ export class EmpresasComponent {
     })
   }
 
+  ngOnInit(): void {
+    this.loadCompanies();
+  }
+
+  loadCompanies(){
+    this.CompanyService.getCompanies().subscribe({
+      next: data => this.companies = data,
+      error: (msg) => console.log("Erro ao chamar o ENDPOINT..." + msg)
+    });
+  }
+
   save(){
     this.CompanyService.save(this.formGroupCompany.value).subscribe({
       next: data => {
