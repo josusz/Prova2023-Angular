@@ -1,0 +1,32 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "name": "Raw Company",
+      "active": "true",
+      "category": "National",
+      "contact": "comercial@rawcompany.com"
+    },
+    {
+      "id": 2,
+      "name": "JBM Company",
+      "active": false,
+      "category": "International",
+      "contact": "comercial@jbmcompany.com"
+    },
+    {
+      "id": 3,
+      "name": "Stuart Company",
+      "active": "true",
+      "category": "International",
+      "contact": "comercial@stuartcompany.com"
+    },
+    {
+      "id": 4,
+      "name": "Laravel Company",
+      "active": "true",
+      "category": "International",
+      "contact": "comercial@laravelcompany.com"
+    }
+  ]
+}

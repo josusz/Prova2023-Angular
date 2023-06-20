@@ -1,0 +1,63 @@
+<div class="mx-auto p-2" style="max-width: 700px;">
+  <form class="row g-3" [formGroup]="formGroupCompany">
+      <div style="margin-top: 70px;">
+          <h2 style="text-align: center; margin-bottom: 30px;">CRUD for Companies &#x260D;</h2>
+          <hr>
+      </div>
+      <div class="col-12">
+          <label for="name" class="form-label">Enter the NAME</label>
+          <input type="text" formControlName="name" class="form-control" id="name" placeholder="Ex.: GitHub...">
+      </div>
+      <div class="col-md-6">
+          <label for="active" class="form-label">Mark the SITUATION</label>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" formControlName="active" checked>
+              <label class="form-check-label" for="flexCheckChecked">Active</label>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <label for="category" class="form-label">Select the CATEGORY</label>
+          <select name="category" class="form-select" formControlName="category">
+            <option value="Regional">Regional</option>
+            <option value="National">National</option>
+            <option value="International">International</option>
+          </select>
+      </div>
+      <div class="col-12">
+          <label for="contact" class="form-label">Enter the CONTACT</label>
+          <input type="email" formControlName="contact" class="form-control" id="contact" placeholder="Ex.: email@domain.com">
+      </div>
+      <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-success" (click)="save()">Click here to SAVE</button>
+      </div>
+  </form>
+</div>
+<h4 style="text-align: center; margin-top: 40px; margin-bottom: 16px;">Registered Suppliers</h4>
+<table class="table table-bordered">
+<thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Name</th>
+    <th scope="col">Active</th>
+    <th scope="col">Category</th>
+    <th scope="col">Contact</th>
+  </tr>
+</thead>
+  <tbody>
+    <tr >
+      <th></th>
+      <td></td>
+      <td>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox">
+          <label class="form-check-label" for="flexCheckChecked"></label>
+        </div>
+      </td>
+      <td></td>
+      <td></td>
+      <td class="d-flex justify-content-end">
+        <button class="btn btn-danger me-1">Remove</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
